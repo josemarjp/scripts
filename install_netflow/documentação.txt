@@ -1,0 +1,45 @@
+Documentação do Script PowerShell - 
+pwsh-preview
+
+Objetivo:
+Este script PowerShell foi criado para automatizar várias tarefas 
+relacionadas ao GitHub, Docker e manipulação de arquivos. 
+Ele facilita o processo de download de repositórios do GitHub, modificação de arquivos e execução de serviços usando o Docker.
+
+Instruções de Uso:
+
+1 Passo - Aplicar os parametros abaixos no kernel do linux
+
+ sysctl -w net.core.somaxconn=2048
+ sysctl -w net.core.netdev_max_backlog=8192
+ sysctl -w net.core.rmem_max=33554432
+ sysctl -w net.core.rmem_default=262144
+ sysctl -w net.ipv4.udp_rmem_min=131072
+ sysctl -w net.ipv4.udp_mem="2097152 4194304 8388608"
+
+ 2 Passo -  Reboot na maquina
+
+
+
+
+
+
+O script começa exibindo uma mensagem de boas-vindas no console.
+Solicitação de Informações do Usuário:
+
+O script solicita três informações do usuário:
+Nome de usuário do GitHub.
+Token de acesso do GitHub.
+Client ID do GitHub.
+Instalação de Pacotes:
+
+O script atualiza o sistema e instala os seguintes pacotes:
+Docker.
+Docker Compose.
+Git.
+Função para Baixar Repositórios Públicos:
+
+
+Notas Finais:
+Este script foi criado para facilitar o processo de download de repositórios do GitHub, realizar modificações nos arquivos e iniciar 
+serviços usando o Docker. Leia as instruções cuidadosamente antes de executar o script para garantir uma execução bem-sucedida.
